@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Satoshi;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(fonts/Satoshi-Medium.ttf);
+}
+
+@font-face {
+    font-family: Halloween;
+    src: url(fonts/Aloevera-OVoWO.ttf);
+}
+
+body {
+    background: url(images/bg1.jpg);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#body-main {
+    background: url(images/bg1.jpg);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header .title {
+    display: flex;
+}
+
+header h3 {
+    margin: 10px auto 0 auto;
+    text-shadow: 2px 2px 3px rgb(92, 77, 13);
+}
+
+header img {
+    width: 150px;
+    margin: 8px;
+}
+
+.hal {
+    font-family: Halloween;
+    margin: 0 auto;
+    font-size: 28px;
+}
+
+h4 {
+    padding: 12px;
+}
+
+main {
+    margin: 0 auto;
+    width: 88%;
+    height: 85vh;
+    position: relative;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 16px;
+    overflow-x: hidden;
+    box-shadow: 2px 3px 4px rgb(88, 88, 88), -2px -3px 4px gray;
+}
+
+main ul {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main ul li {
+    color: rgba(3, 48, 3, 0.863);
+    text-shadow: 1px 1px rgba(99, 99, 99, 0.418);
+}
+
+main ul li:hover {
+    color: rgb(202, 156, 5);
+    transform: scale(1.3);
+    transition: 0.3s;
+    text-shadow: 1px 2px 2px rgba(58, 58, 58, 0.425);
+}
+
+main ul .dropdown {
+    display: block;
+    position: fixed;
+
+}
+
+main ul .dropdown li {
+    display: none;
+}
+
+main ul li:hover>.dropdown li {
+    display: flex;
+    flex-direction: row;
+}
+
+main ul .active {
+    transform: scale(1.2);
+    color: rgb(202, 156, 5);
+    border-bottom: 3px solid rgb(202, 156, 5);
+}
+
+main ul li a {
+    color: rgb(202, 156, 5);
+}
+
+main .action p {
+    margin: 20px auto;
+    max-width: 400px;
+    padding-top: 10%;
+    display: block;
+    font-size: larger;
+}
+
+.chinese-body {
+    background: url(images/bgc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nigeria-body {
+    background: url(images/bgn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#drinks-body {
+    background: url(images/bgd.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 350px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form input {
+    width: 100%;
+    border: 2px solid rgb(68, 68, 68);
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    background: rgba(216, 192, 113, 0.384);
+}
+
+form input:focus {
+    background: white;
+}
+
+form button {
+    background: #fd8207;
+    width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid wheat;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+form button a {
+    color: whitesmoke;
+}
+
+form .dlt {
+    background: rgb(231, 11, 15);
+    width: 38%;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    background: #e27911e5;
+}
+
+form .dlt:hover {
+    background: rgb(231, 13, 13, 0.92);
+}
+
+form .back a {
+    color: #fd8207;
+}
+
+.error {
+    background: rgb(247, 180, 169);
+    color: rgb(151, 57, 28);
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.error p {
+    padding-left: 30px;
+    display: flex;
+    justify-items: center;
+}
+
+.success {
+    background: rgb(6, 223, 115);
+    color: rgb(3, 53, 14);
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.edit-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.edit-form-container form {
+    width: 380px;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+.edit-form-container button {
+    margin: 5px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.edit-form-container button:hover {
+    background: rgb(51, 51, 51);
+}
+
+.edit-form-container label {
+    margin-left: 2px;
+    display: block;
+}
+
+.regg {
+    overflow-y: scroll;
+}
+
+.upd-btn {
+    background-color: rgb(24, 111, 168);
+}
+
+.del-btn {
+    background: red;
+}
+
+.reg-btn {
+    width: 100%;
+    background: #fd8207;
+    color: white;
+    margin-top: 8px;
+}
+
+.regg-btn {
+    margin: 5px 0;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #fd8207;
+    border: 2px solid wheat;
+    cursor: pointer;
+}
+
+.regg-btn:hover {
+    background: rgb(51, 51, 51);
+    transform: scale(1.05);
+}
+
+.regg-btn a {
+    color: whitesmoke;
+}
+
+textarea {
+    padding: 7px;
+}
+
+.reg-btn:hover {
+    background: rgb(34, 34, 34);
+}
+
+.message {
+    position: fixed;
+    padding: 10px;
+    background: #faad0683;
+    top: 5px;
+    left: 5px;
+    color: white;
+    text-shadow: 1px 2px 2px #181315;
+    border-radius: 12px;
+    margin-top: 5px;
+    user-select: none;
+    animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.display-order {
+    background: rgb(36, 36, 36);
+    padding: 8px;
+    color: #faad06;
+    border-radius: 8px;
+}
+
+.order-message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(22, 22, 22, 0.92);
+    width: 100%;
+}
+
+.order-message-container::-webkit-scrollbar {
+    width: 17px;
+}
+
+.order-message-container::-webkit-scrollbar-track {
+    background-color: rgb(19, 19, 19);
+}
+
+.order-message-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(31, 31, 31), rgb(24, 24, 24));
+}
+
+.order-message-container .message-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.order-message-container .message-container h3 {
+    color: black;
+    margin: 10px;
+}
+
+.order-message-container .message-container .order-detail {
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 12px;
+}
+
+.order-message-container .message-container .order-detail span {
+    background-color: white;
+    border-radius: .5rem;
+    color: rgb(22, 22, 22);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.order-message-container .message-container .order-detail span.total {
+    display: block;
+    background: #fd8207;
+    color: white;
+}
+
+.order-message-container .message-container .customer-details {
+    margin: 8px 0;
+}
+
+.order-message-container .message-container .customer-details p {
+    padding: 7px 0;
+    color: rgb(22, 22, 22);
+}
+
+.order-message-container .message-container .customer-details p span {
+    color: #fd8207;
+    padding: 5px;
+    text-transform: none;
+}
+
+.sales {
+    margin: 8px;
+}
+
+main ul span,
+label span {
+    color: #fd8207;
+}

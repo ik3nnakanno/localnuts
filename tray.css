@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Satoshi;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: rgb(61, 61, 61);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(38, 38, 39);
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgb(72, 80, 71), rgb(15, 15, 15));
+
+}
+
+
+@font-face {
+    font-family: Satoshi;
+    src: url(fonts/Satoshi-Medium.ttf);
+}
+
+:root {
+    --col1: #292929;
+    --col2: #fd8207;
+    --col3: #faad06;
+}
+
+body {
+    width: 100%;
+    background: url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #faad06;
+}
+
+.login-f {
+    margin-top: 15vh;
+}
+
+.link {
+    color: #fd8207;
+}
+
+.tray-nav {
+    background-color: #292929;
+    border-bottom: 3px solid #fd8207;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 10vh;
+}
+
+.tray-nav img {
+    width: 140px;
+    padding: 5px;
+}
+
+.tray-nav span {
+    background: white;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+section {
+    background: #29292971;
+    overflow-y: scroll;
+    height: 80vh;
+    margin-top: 10vh;
+    background: #29292967;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    backdrop-filter: 30px;
+    width: 100%;
+}
+
+.tray {
+    /* width: 280px; */
+    height: 308px;
+    border: 3px solid rgb(49, 49, 49);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 20px;
+    background: var(--col1);
+    box-shadow: inset 1px 2px 4px rgb(143, 143, 143), -2px -3px 4px rgb(107, 107, 107), inset -1px -2px 3px rgb(78, 78, 78);
+}
+
+.tray img {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0 9px 5px 0;
+}
+
+input {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border: 3px solid rgb(39, 39, 39);
+    padding: 3px;
+    background: rgb(145, 145, 145);
+    color: black;
+}
+
+.tray-box {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.tray-btm {
+    background: #292929;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 3px solid #fd8207;
+    position: absolute;
+    bottom: 0;
+    height: 12vh;
+}
+
+.upd-btn {
+    background-color: #fd8207;
+}
+
+.del-btn {
+    background: rgb(221, 42, 19);
+}
+
+button {
+    margin: 5px 0;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid wheat;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(51, 51, 51);
+    transform: scale(1.05);
+}
+
+button a {
+    color: whitesmoke;
+}
+
+@media (max-width:600px) {
+    .tray-btm {
+        background: #292929;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-top: 3px solid #fd8207;
+        position: absolute;
+        bottom: 0;
+        height: 22vh;
+    }
+
+    .tray-btm button {
+        height: 60px;
+    }
+
+    .tray-nav {
+        background-color: #292929;
+        border-bottom: 3px solid #fd8207;
+        padding: 8px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        height: 13vh;
+        flex-wrap: wrap;
+
+    }
+}
